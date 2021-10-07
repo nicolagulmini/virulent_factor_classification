@@ -13,9 +13,9 @@ The features are computed with [iFeature](https://github.com/Superzchen/iFeature
 ```
 !rm -r iFeature
 !git clone https://github.com/Superzchen/iFeature
-!python iFeature/iFeature.py --file ./input.fasta --type AAC --out aac.out # amino acids composition
-!python iFeature/iFeature.py --file ./input.fasta --type DPC --out dpc.out # dipeptide composition
-!python iFeature/iFeature.py --file ./input.fasta --type CTDC --out ctdc.out # composition
-!python iFeature/iFeature.py --file ./input.fasta --type CTDT --out ctdt.out # transition
-!python iFeature/iFeature.py --file ./input.fasta --type CTDD --out ctdd.out # distribution
+!python iFeature/iFeature.py --file ./input.fasta --type AAC --out aac.out    # amino acids composition
+!python iFeature/iFeature.py --file ./input.fasta --type DPC --out dpc.out    # dipeptide composition
+!python iFeature/iFeature.py --file ./input.fasta --type CTDC --out ctdc.out  # composition
+!python iFeature/iFeature.py --file ./input.fasta --type CTDT --out ctdt.out  # transition
+!python iFeature/iFeature.py --file ./input.fasta --type CTDD --out ctdd.out  # distribution
 ```
