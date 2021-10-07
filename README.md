@@ -8,3 +8,14 @@ The features are computed with [iFeature](https://github.com/Superzchen/iFeature
 - CTDT: transition
 - CTDD: distribution
 ([here](https://github.com/Superzchen/iFeature/blob/master/iFeatureManual.pdf) if you want more information about what they are and how to compute them).
+
+## brief feature computation tutorial (colab, uploading `input.fasta`)
+```
+!rm -r iFeature
+!git clone https://github.com/Superzchen/iFeature
+!python iFeature/iFeature.py --file ./input.fasta --type AAC --out aac.out # amino acids composition
+!python iFeature/iFeature.py --file ./input.fasta --type DPC --out dpc.out # dipeptide composition
+!python iFeature/iFeature.py --file ./input.fasta --type CTDC --out ctdc.out # composition
+!python iFeature/iFeature.py --file ./input.fasta --type CTDT --out ctdt.out # transition
+!python iFeature/iFeature.py --file ./input.fasta --type CTDD --out ctdd.out # distribution
+```
