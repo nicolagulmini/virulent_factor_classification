@@ -14,22 +14,22 @@ class virulent_factor_classification_model:
         ctdt = Input(shape=(39))
         ctdd = Input(shape=(195))
         
-        aac = Dense(30, activation='sigmoid')(aac)
-        aac = Dense(1, activation='sigmoid')(aac)
+        aac_1 = Dense(30, activation='sigmoid')(aac)
+        aac_2 = Dense(1, activation='sigmoid')(aac_1)
         
-        dpc = Dense(400, activation='sigmoid')(dpc)
-        dpc = Dense(1, activation='sigmoid')(dpc)
+        dpc_1 = Dense(400, activation='sigmoid')(dpc)
+        dpc_2 = Dense(1, activation='sigmoid')(dpc_1)
         
-        ctdc = Dense(50, activation='sigmoid')(ctdc)
-        ctdc = Dense(1, activation='sigmoid')(ctdc)
+        ctdc_1 = Dense(50, activation='sigmoid')(ctdc)
+        ctdc_2 = Dense(1, activation='sigmoid')(ctdc_1)
         
-        ctdt = Dense(50, activation='sigmoid')(ctdt)
-        ctdt = Dense(1, activation='sigmoid')(ctdt)
+        ctdt_1 = Dense(50, activation='sigmoid')(ctdt)
+        ctdt_2 = Dense(1, activation='sigmoid')(ctdt_1)
         
-        ctdd = Dense(200, activation='sigmoid')(ctdd)
-        ctdd = Dense(1, activation='sigmoid')(ctdd)
+        ctdd_1 = Dense(200, activation='sigmoid')(ctdd)
+        ctdd_2 = Dense(1, activation='sigmoid')(ctdd_1)
         
-        concat = Concatenate()([aac, dpc, ctdc, ctdt, ctdd])
+        concat = Concatenate()([aac_2, dpc_2, ctdc_2, ctdt_2, ctdd_2])
         final_dense = Dense(1, activation='sigmoid')(concat)
         
         model = Model(inputs=[aac, dpc, ctdc, ctdt, ctdd], outputs=final_dense)
