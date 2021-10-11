@@ -7,7 +7,7 @@ The features are computed with [iFeature](https://github.com/Superzchen/iFeature
 - CTDC: composition
 - CTDT: transition
 - CTDD: distribution
-- 
+
 ([here](https://github.com/Superzchen/iFeature/blob/master/iFeatureManual.pdf) if you want more information about what they are and how to compute them).
 
 ## brief feature computation tutorial (colab, uploading an `input.fasta` file with your proteins)
