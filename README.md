@@ -20,3 +20,12 @@ The features are computed with [iFeature](https://github.com/Superzchen/iFeature
 !python iFeature/iFeature.py --file ./input.fasta --type CTDT --out ctdt.out  # transition
 !python iFeature/iFeature.py --file ./input.fasta --type CTDD --out ctdd.out  # distribution
 ```
+
+# Performance
+
+The model is trained on the same datasets of PathoFact for 20 epochs. Here the performance in terms of loss and accuracy on training and validation sets:
+
+![loss](https://user-images.githubusercontent.com/62892813/137992562-e35bb45f-6034-46dd-81b0-0bac7c66d86c.png)
+![accuracy](https://user-images.githubusercontent.com/62892813/137992567-fded0e28-05b0-4589-9205-8dffe7aee316.png)
+
+the accuracy on the test set is 76%. The accuracy on [this](https://drive.google.com/drive/folders/11_t9oVYcTjX9yVkNvk9qHWqSxbFCvXAA?usp=sharing) negative test set is 84%. The accuracy on a positive test set is coming soon.
