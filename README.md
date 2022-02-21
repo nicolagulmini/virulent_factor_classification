@@ -25,7 +25,7 @@ The features are computed with [iFeature](https://github.com/Superzchen/iFeature
 
 The model is trained on the same datasets of PathoFact for 20 epochs. Here the performance in terms of loss and accuracy on training and validation sets:
 
-![loss](https://user-images.githubusercontent.com/62892813/137992562-e35bb45f-6034-46dd-81b0-0bac7c66d86c.png)
-![accuracy](https://user-images.githubusercontent.com/62892813/137992567-fded0e28-05b0-4589-9205-8dffe7aee316.png)
+![loss](https://user-images.githubusercontent.com/62892813/154985962-61661e0c-6ea3-4445-b568-ecc3c59024d6.png)
+![acc](https://user-images.githubusercontent.com/62892813/154985964-5d1d3f54-8374-4f26-ab1e-3f7300c9770d.png)
 
 the accuracy on the test set is 76%. The accuracy on [this](https://drive.google.com/drive/folders/11_t9oVYcTjX9yVkNvk9qHWqSxbFCvXAA?usp=sharing) negative test set is 84%. The accuracy on [this](https://drive.google.com/drive/folders/1yKBrBPAbS7NsB2PQ3c9tA6dO4d2ovkeK?usp=sharing) positive test set is 64%. 
