@@ -21,8 +21,25 @@ The features are computed with [iFeature](https://github.com/Superzchen/iFeature
 !python iFeature/iFeature.py --file ./input.fasta --type CTDD --out ctdd.out  # distribution
 ```
 
+# Dataset
+
+The positive samples (proteins which are virulence factors) are taken from [VFDB](http://www.mgc.ac.cn/VFs/main.htm), while the negative samples are taken from [UniProtKB](https://www.uniprot.org/help/uniprotkb) searching 
+```
+taxonomy:"Bacteria [2]" NOT virulent NOT virulence NOT pathogen NOT pathogenic NOT lethal NOT adhesin NOT toxin NOT invasin NOT antiphagocytic NOT hemolysin NOT endotoxin NOT exotoxin NOT infect NOT subtilisin NOT infective NOT enterotoxin NOT hydrolase NOT lipopolysaccharide NOT lipase NOT immunoevasion NOT immunomodulation NOT aldolase NOT phospholipase NOT biofilm NOT pilus NOT multidrug NOT flagellar NOT flagella NOT motility NOT infection NOT adherence NOT lipoprotein AND reviewed:yes
+```
+and then manually removing the proteins according to
+```
+excluding antibiotics
+excluding heparinase 
+excluding spore
+```
+
+Then, the two datasets are concatenated, shuffled, and a train-validation-test split is performed taking 50% of the proteins for training, 25% for the validation and 25 for testing.
+
+# Performance
+
 Here the performance in terms of accuracy on training and validation sets:
 
-# Performance![acc](https://user-images.githubusercontent.com/62892813/158029536-0f10cd8d-7238-4eb9-8401-7340ed2c6248.png)
+![acc](https://user-images.githubusercontent.com/62892813/158029536-0f10cd8d-7238-4eb9-8401-7340ed2c6248.png)
 
 the accuracy on the test set is 79.6%.
