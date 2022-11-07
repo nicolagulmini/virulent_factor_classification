@@ -47,4 +47,4 @@ Here the performance in terms of accuracy on training and validation sets:
 
 the accuracy on the test set is 79.6%.
 
-Every passage herein described can be found in [this notebook](./example.ipynb)
+Every passage herein described can be found in [this notebook](./example.ipynb).
