@@ -1,7 +1,9 @@
-# virulent_factor_classification
+# Virulent
+
 Model that computes the probability of a protein to be a virulent factor.
-Since this project takes inspiration from [PathoFact](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00993-9), the feedforward artificial neural network model takes some protein features as input and it is trained in order to correctly classify if a protein is a virulent factor or not. In this terms, the task is a binary classification, so an entropy loss is used. 
-The features are computed with [iFeature](https://github.com/Superzchen/iFeature) so a parser of the iFeature output files, to obtain the vectors to feed the model, is used. They are:
+
+Since this project takes inspiration from [PathoFact](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00993-9), the neural network takes some protein features as input and it is trained in order to correctly classify if a protein is a virulent factor or not. In this terms, the task is a binary classification, so an entropy loss is used. 
+Features are computed with [iFeature](https://github.com/Superzchen/iFeature) so a parser of the iFeature output files, to obtain the vectors to feed the model, is used. They are:
 - AAC: amino acids composition
 - DPC: dipeptide composition
 - CTDC: composition
@@ -14,7 +16,7 @@ The features are computed with [iFeature](https://github.com/Superzchen/iFeature
 
 The positive samples (proteins which are virulence factors) are taken from [VFDB](http://www.mgc.ac.cn/VFs/main.htm), while the negative samples are taken from [UniProtKB](https://www.uniprot.org/help/uniprotkb) searching 
 ```
-taxonomy:"Bacteria [2]" NOT virulent NOT virulence NOT pathogen NOT pathogenic NOT lethal NOT adhesin NOT toxin NOT invasin NOT antiphagocytic NOT hemolysin NOT endotoxin NOT exotoxin NOT infect NOT subtilisin NOT infective NOT enterotoxin NOT hydrolase NOT lipopolysaccharide NOT lipase NOT immunoevasion NOT immunomodulation NOT aldolase NOT phospholipase NOT biofilm NOT pilus NOT multidrug NOT flagellar NOT flagella NOT motility NOT infection NOT adherence NOT lipoprotein AND reviewed:yes
+taxonomy: "Bacteria [2]" NOT virulent NOT virulence NOT pathogen NOT pathogenic NOT lethal NOT adhesin NOT toxin NOT invasin NOT antiphagocytic NOT hemolysin NOT endotoxin NOT exotoxin NOT infect NOT subtilisin NOT infective NOT enterotoxin NOT hydrolase NOT lipopolysaccharide NOT lipase NOT immunoevasion NOT immunomodulation NOT aldolase NOT phospholipase NOT biofilm NOT pilus NOT multidrug NOT flagellar NOT flagella NOT motility NOT infection NOT adherence NOT lipoprotein AND reviewed:yes
 ```
 and then manually removing the proteins according to
 ```
