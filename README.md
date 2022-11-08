@@ -43,8 +43,10 @@ Then, the two datasets are concatenated, shuffled, and a train-validation-test s
 
 Here the performance in terms of accuracy on training and validation sets:
 
-![acc](https://user-images.githubusercontent.com/62892813/158029536-0f10cd8d-7238-4eb9-8401-7340ed2c6248.png)
+![acc](https://user-images.githubusercontent.com/62892813/200610768-52d1f800-9d5a-4c36-82d1-5ee85b9740af.png)
 
-the accuracy on the test set is 79.6%.
+the accuracy on the test set is 77%:
+Accuracy on POSITIVE classes: 72.48%
+Accuracy on NEGATIVE classes: 82.20%
 
-Every passage herein described can be found in [this notebook](./example.ipynb).
+Every passage herein described can be found in [this notebook](./Virulent_training.ipynb).
