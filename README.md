@@ -41,14 +41,15 @@ Then, the two datasets are concatenated, shuffled, and a train-validation-test s
 
 # Performance
 
-Here the performance in terms of accuracy on training and validation sets:
+Here the performance in terms of loss and accuracy on training and validation sets:
 
-![acc](https://user-images.githubusercontent.com/62892813/200610768-52d1f800-9d5a-4c36-82d1-5ee85b9740af.png)
+![loss](https://user-images.githubusercontent.com/62892813/203846188-94109afb-6280-445e-8017-f8c7ca8544d8.png)
+![acc](https://user-images.githubusercontent.com/62892813/203846194-aa2bc8d9-c394-4c52-b3a5-dcfb0a250eea.png)
 
-the accuracy on the test set is 77%:
-```
-Accuracy on POSITIVE classes: 72.48%
-Accuracy on NEGATIVE classes: 82.20%
-```
+the accuracy on the test set is about 75%.
 
 Every passage herein described can be found in [this notebook](./Virulent_training.ipynb).
+
+## Transformer
+
+We tried a transformer-based classificator on sequences (without extracting any feature) and we were able to reach roughly the same accuracy as the previous model, but with more training time. You can find the code [here](./Transformer-based virulent factor classification.ipynb).
