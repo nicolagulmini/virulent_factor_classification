@@ -52,4 +52,4 @@ Every passage herein described can be found in [this notebook](./Virulent_traini
 
 ## Transformer
 
-We tried a transformer-based classificator on sequences (without extracting any feature) and we were able to reach roughly the same accuracy as the previous model, but with more training time. You can find the code [here](./Transformer-based virulent factor classification.ipynb).
+We tried a transformer-based classificator on sequences (without extracting any feature) and we were able to reach roughly the same accuracy as the previous model, but with more training time. You can find the code in the related notebook: Transformer-based virulent factor classification.ipynb.
